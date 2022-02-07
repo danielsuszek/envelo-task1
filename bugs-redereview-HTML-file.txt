@@ -1,0 +1,29 @@
+line 9
+  poprawna delkaracja, ale nie najlepszy kolor na tło
+
+line 13
+  poprawna delaracja powinna wyglądać: 
+    body {
+      background-color: var(--bg-color);
+    }
+
+line 14
+  nie zaimportowana czcionka Lato
+  poprawa: patrz mój plik index.html linia 10
+
+line 30
+  class, a nie className
+
+line 31
+  W plain JS tak nie można
+  poprawa: mój plik main.js line: 30, 31
+
+line 32
+  Usunąć znak >
+
+line 33
+  Niedziałający button, patrz moje rozwiązanie w main.js
+
+line 35
+  brak atrybutu src="heroes-hall-of-fame"
+

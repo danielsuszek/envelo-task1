@@ -1,0 +1,36 @@
+I. Plik heroes-hall-of-fame.js
+
+linie: 7, 14, 18, 49
+  niedozwolona nazwa zmiennej, w JS nie wolno nazwy zmiennej zaczynać od znaku #
+
+linie: 22, 35 
+  zmienna heroCount jest niepotrzebna, jeżeli chcemy uzyskać liczbę obiektów klasy Hero
+  używamy heroes.length lub heroes.size (gdzie heroes to tablica złożona z tych obiektów)
+
+linia: 34 
+  funkcja gethero() jest niepotrzebna i źle napisana
+  tworzenie obiektu klasy hero (linie 26, 27, 40) powinno wyglądać tak:
+    const hulk = new Hero("hulk")
+    const gerald = new Hero("gerald")
+    const spiderman = new Hero("spiderman") 
+      
+
+    Uwagi: 
+      do deklaracji zmiennych typów złożonych używamy 
+        const
+      do deklaracji zmiennych typów prostych (boolean, number, string, undefined, null, symbol), 
+      których wartość będzie się zmieniać używamy 
+        let
+
+linie: 40, 41
+  Obiekt spiderman powinien być tworzony i dodawany do tablicy heroes, tam gdzie tworzone są inne obiekty tej klasy. 
+  Kod zadziała ( jeżeli utworzymy const spiderman = new Hero("spiderman"))
+  , ale jest mniej czytelny.
+
+linia: 43
+  document.querySelertor("#div") szuka wszystkich elementów, których id="div" (nic nie znajdzie)
+  W tym przypadku powinniśmy znaleźć element div, który posiada klasę hero, czyli
+    const heroesContainer = document.querySelector(".hero")
+
+linia: 39
+  funkcję print_hall_of_fame() napisałbym inaczej patrz linia 23 w moim pliku main.js
